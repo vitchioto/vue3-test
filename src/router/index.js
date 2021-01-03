@@ -18,7 +18,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  // eslint-disable-next-line no-restricted-globals
+  history: createWebHashHistory(location.pathname),
   routes,
 });
 
